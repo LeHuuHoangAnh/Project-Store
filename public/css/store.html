@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Store</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='src/tailwind.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='store.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="max-w-[1200px] m-auto dark:bg-neutral-900 dark:text-white">
+    <header>
+        <div class="relative flex items-center justify-between py-[40px]">
+            <nav class="absolute flex items-center justify-between top-0 left-0 w-full py-[15px]">
+                <div class="relative flex items-center justify-center">
+                    <p class="text-[18px] font-bold uppercase">JeiKei Store</p>
+                    <ul class="flex ml-4">
+                        <li class="px-[20px] text-[18px]"><a href="#" class="no-underline font-semibold text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">All</a></li>
+                        <li class="px-[20px] text-[18px]"><a href="#" class="no-underline font-semibold text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Shirts</a></li>
+                        <li class="px-[20px] text-[18px]"><a href="#" class="no-underline font-semibold text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Stickers</a></li>
+                    </ul>
+                    <div class="ml-[50px]">
+                        <input type="text" placeholder="Search for products..." class="relative border-[1px] border-[#646464] bg-transparent w-[420px] p-[6px] rounded-e-[5px] rounded-s-[5px] placeholder:text-[#808080]">
+                        <i class="fa-solid fa-magnifying-glass absolute top-[10px] left-[95%] translate-x-[50%] cursor-pointer"></i>
+                    </div>
+                </div>
+                <button>
+                    <div class="relative border border-[#646464] rounded"><i class="fa-sharp fa-solid fa-cart-shopping p-[12px] ease-out duration-[0.4s] hover:scale-[1.1]"></i></div>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <div class="mx-auto flex max-w-screen-2xl flex-col gap-8 pd-4 md:flex-row">
+        <div class="relative flex flex-col justify-center max-w-[125px]">
+            <p class="text-[#808080] text-sm mb-1">Collections</p>
+            <ul>
+                <li class="pb-1"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[#fff] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">All</a></li>
+                <li class="pb-1"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Bags</a></li>
+                <li class="pb-1"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Shoes</a></li>
+                <li class="pb-1"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Shirts</a></li>
+                <li class="pb-1"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Hoodies</a></li>
+                <li class="pb-1"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Headwear</a></li>
+                <li class="pb-1"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Jackets</a></li>
+                <li class="pb-1"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Trousers</a></li>
+                <li class="pb-1"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Stickers</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src='store.js'></script>
+</body>
+
+</html>
