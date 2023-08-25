@@ -35,7 +35,7 @@
         </div>
     </header>
     <div class="mx-auto flex max-w-screen-2xl flex-col gap-8 pd-4 md:flex-row">
-        <div class="relative flex flex-col justify-center max-w-[125px]">
+        <div class="order-first relative flex flex-col md:max-w-[125px]">
             <p class="text-[#808080] text-sm mb-1">Collections</p>
             <ul>
                 <li class="pb-1"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[#fff] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">All</a></li>
@@ -49,6 +49,7 @@
                 <li class="pb-1"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Stickers</a></li>
             </ul>
         </div>
+        <div id="products" class="grid grid-cols-3 gap-x-5 pt-5"></div>
     </div>
     <script src='store.js'></script>
 </body>
