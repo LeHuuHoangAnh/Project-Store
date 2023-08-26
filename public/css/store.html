@@ -12,7 +12,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="max-w-[1200px] m-auto dark:bg-neutral-900 dark:text-white">
+<body class="max-w-[1200px] m-auto ">
     <header>
         <div class="relative flex items-center justify-between py-[40px]">
             <nav class="absolute flex items-center justify-between top-0 left-0 w-full py-[15px]">
@@ -50,6 +50,15 @@
             </ul>
         </div>
         <div id="products" class="grid grid-cols-3 gap-x-5 pt-5"></div>
+        <div>
+            <p class="text-[#808080] text-sm mb-1">Sort By</p>
+            <ul>
+                <li><a href="#" class="no-underline text-[18px] border-b-[2px] border-[#fff] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Relevance</a></li>
+                <li><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Trending</a></li>
+                <li><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Latest arrivals</a></li>
+                <li><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#fff]">Hot</a></li>
+            </ul>
+        </div>
     </div>
     <script src='store.js'></script>
 </body>
