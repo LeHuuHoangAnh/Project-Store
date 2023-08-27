@@ -8,7 +8,7 @@ let products = {
             image: "img/61Ep+91fCCL._AC_SX679._SX._UX._SY._UY_.jpg"
         },
         {
-            productname: "Amazon Essentials Men's Classic-Fit Casual Stretch Khaki Pant",
+            productname: "Amazon Essentials Men's Classic-Fit Casual Stretch",
             category: "Trousers",
             price: "44",
             cart: "Add to cart",
@@ -22,14 +22,14 @@ let products = {
             image: "img/71vV02rloNL._AC_UY741_.jpg"
         },
         {
-            productname: "Haggar Men's Cool 18 Pro Straight Fit Flat Front Superflex Waistband Pant",
+            productname: "Haggar Men's Cool 18 Pro Straight Fit Flat Front",
             category: "Trousers",
             price: "37",
             cart: "Add to cart",
             image: "img/61tm4WT9JNL._AC_UX679_.jpg"
         },
         {
-            productname: "Outdoor Cap Mountain Dad Hat - Unstructured Soft Cotton Cap",
+            productname: "Outdoor Cap Mountain Dad Hat - Unstructured Soft",
             category: "Headwear",
             price: "13",
             cart: "Add to cart",
@@ -71,7 +71,7 @@ let products = {
             image: "img/51lAjVqM7dL._AC_UY575_.jpg"
         },
         {
-            productname: "Razer Xanthus Tote Bag: Dedicated Padded Laptop Compartment",
+            productname: "Razer Xanthus Tote Bag: Dedicated Padded Laptop",
             category: "Bags",
             price: "89",
             cart: "Add to cart",
@@ -140,3 +140,15 @@ for (let i of products.data) {
     cart_price.appendChild(cart);
     card.appendChild(cart_price);
 }
+
+//sidebar
+let bar = document.querySelector('.bar');
+let sidebar = document.querySelector('.sidebar');
+let closed = document.querySelector('.closed');
+bar.addEventListener("click", function() {
+    sidebar.classList.toggle('left-[-100%]');
+})
+
+closed.addEventListener("click", function() {
+    sidebar.classList.toggle('left-[-100%]');
+})
