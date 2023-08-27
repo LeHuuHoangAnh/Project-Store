@@ -152,3 +152,19 @@ bar.addEventListener("click", function() {
 closed.addEventListener("click", function() {
     sidebar.classList.toggle('left-[-100%]');
 })
+
+var clickdown = document.querySelector('.clickdown');
+var dropdown = document.querySelector('.dropdown');
+var list = document.querySelector('.list');
+clickdown.onclick = function() {
+    list.classList.toggle('hidden');
+    dropdown.classList.toggle('rotate-180');
+}
+
+var clickdown_2 = document.querySelector('.clickdown_2');
+var dropdown_2 = document.querySelector('.dropdown_2');
+var list_2 = document.querySelector('.list_2');
+clickdown_2.onclick = function() {
+    list_2.classList.toggle('hidden');
+    dropdown_2.classList.toggle('rotate-180');
+}

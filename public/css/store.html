@@ -16,7 +16,7 @@
     <div class="max-w-[1200px] m-auto md:flex-row">
         <header>
             <div class="relative flex items-center justify-between py-[40px]">
-                <nav class="absolute flex items-center justify-between top-0 left-0 w-full px-4 py-[15px] lg:px-6">
+                <nav class="absolute flex items-center justify-between top-0 left-0 w-full px-4 py-[15px]">
                     <button class="md:hidden bar">
                         <div class="relative border border-[#a3a3a3] rounded"><i
                             class="fa-solid fa-bars p-[12px] ease-out duration-[0.4s] hover:scale-[1.1]"></i>
@@ -49,7 +49,7 @@
             </div>
         </header>
         <!-- sidebar -->
-        <div class="sidebar fixed top-0 bottom-0 left-[-100%] bg-[#fff] p-4 w-full h-full md:hidden">
+        <div class="sidebar fixed top-0 bottom-0 left-[-100%] bg-[#fff] p-4 w-full h-full z-50 md:hidden">
             <div class="mb-4">
                 <button class="closed">
                     <div class="relative border border-[#a3a3a3] rounded w-[40px] h-[40px]">
@@ -57,9 +57,9 @@
                     </div>
                 </button>
             </div>
-            <div class="block relative mb-4">
+            <div class="relative mb-4">
                 <input type="text" placeholder="Search for products..." class="relative border-[1px] border-[#646464] bg-transparent w-full p-[6px] rounded-e-[5px] rounded-s-[5px] placeholder:text-[#808080]">
-                <i class="fa-solid fa-magnifying-glass absolute top-[10px] left-[95%] translate-x-[50%] cursor-pointer"></i>
+                <i class="fa-solid fa-magnifying-glass absolute top-[25%] right-3 cursor-pointer"></i>
             </div>
             <ul class="flex flex-col">
                 <li class="pb-[15px]">
@@ -74,7 +74,42 @@
             </ul>
         </div>
         <div class="mx-auto flex max-w-screen-2xl flex-col gap-8 px-4 pd-4 md:flex-row">
-            <div class="order-first w-full flex-none md:max-w-[125px]">
+            <div class="relative md:hidden">
+                <div class="relative border border-[#a3a3a3] rounded p-3 cursor-pointer clickdown">
+                    <div class="flex items-center justify-between">
+                        <p class="font-bold">All</p>
+                        <i class="fa-solid fa-caret-down rotate-180 ease-out duration-500 dropdown"></i>
+                    </div>
+                </div>
+                <ul class="absolute top-[100%] left-0 z-40 hidden w-full bg-[#cacaca] p-3 rounded list">
+                    <li class="pb-1.5 block"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">All</a></li>
+                    <li class="pb-1.5"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Bags</a></li>
+                    <li class="pb-1.5"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Shoes</a></li>
+                    <li class="pb-1.5"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Shirts</a></li>
+                    <li class="pb-1.5"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Hoodies</a></li>
+                    <li class="pb-1.5"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Headwear</a></li>
+                    <li class="pb-1.5"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Jackets</a></li>
+                    <li class="pb-1.5"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Trousers</a></li>
+                    <li class="pb-1.5"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Stickers</a></li>
+                </ul>
+            </div>
+
+            <div class="relative md:hidden">
+                <div class="relative border border-[#a3a3a3] rounded p-3 cursor-pointer clickdown_2">
+                    <div class="flex items-center justify-between">
+                        <p class="font-bold">Relevance</p>
+                        <i class="fa-solid fa-caret-down rotate-180 ease-out duration-500 dropdown_2"></i>
+                    </div>
+                </div>
+                <ul class="absolute top-[100%] left-0 z-50 w-full hidden bg-[#cacaca] p-3 rounded list_2">
+                    <li class="pb-1.5"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Relevance</a></li>
+                    <li class="pb-1.5"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Trending</a></li>
+                    <li class="pb-1.5"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Latest arrivals</a></li>
+                    <li class="pb-1.5"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Hot</a></li>
+                </ul>
+            </div>
+            
+            <div class="order-first w-full hidden flex-none md:block md:max-w-[125px]">
                 <p class="text-[#808080] text-sm mb-1 order-first">Collections</p>
                 <ul class="md:block">
                     <li class="pb-1"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[#000] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">All</a></li>
@@ -88,8 +123,8 @@
                     <li class="pb-1"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Stickers</a></li>
                 </ul>
             </div>
-            <div id="products" class="order-last grid w-full gap-x-5 pt-5 sm:grid-cols-2 lg:grid-cols-3 md:order-none"></div>
-            <div class="order-none w-full flex-none md:max-w-[125px] md:order-last">
+            <div id="products" class="order-last grid w-full gap-x-5 pt-5 place-content-center sm:grid-cols-2 lg:grid-cols-3 md:order-none"></div>
+            <div class="order-none w-full flex-none hidden md:block md:max-w-[125px] md:order-last">
                 <p class="text-[#808080] text-sm mb-1">Sort By</p>
                 <ul class="md:d-block">
                     <li class="pb-1"><a href="#" class="no-underline text-[18px] border-b-[2px] border-[#000] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Relevance</a></li>
@@ -101,12 +136,12 @@
         </div>
     </div>
     <footer class="mt-28 bg-[#333] text-[#fff] p-5">
-        <div class="max-w-[1200px] mx-auto flex justify-between items-center">
-            <div class="flex">
+        <div class="max-w-[1200px] mx-auto flex justify-center flex-col md:flex-row md:justify-between items-center">
+            <div class="flex flex-col md:flex-row md:text-sm">
                 <p class="mr-5">© 2023 JeiKei, Inc. All rights reserved.</p>
-                <p class="border-l-2 border-l-[#fff] px-4">Designed by JeiKei & PaulTo</p>
+                <p class="md:border-l-2 md:border-l-[#fff] px-4">Designed by JeiKei & PaulTo</p>
             </div>
-            <div>
+            <div class="md:text-sm">
                 <p>The last upgrade was on August 26, 2023</p>
             </div>
         </div>
