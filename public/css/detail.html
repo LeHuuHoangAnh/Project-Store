@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Detail</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='src/tailwind.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='store.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="max-w-[1200px] m-auto md:flex-row">
+        <header>
+            <div class="relative flex items-center justify-between py-[40px]">
+                <nav class="absolute flex items-center justify-between top-0 left-0 w-full px-4 py-[15px]">
+                    <button class="lg:hidden bar">
+                        <div class="relative border border-[#a3a3a3] rounded"><i
+                                class="fa-solid fa-bars p-[12px] ease-out duration-[0.4s] hover:scale-[1.1]"></i>
+                        </div>
+                    </button>
+                    <div class="relative flex items-center justify-center">
+                        <p class="text-[25px] lg:text-[18px] font-bold uppercase">JeiKei <span
+                                class="text-[#4169E1]">Store</span></p>
+                        <ul class="ml-3 hidden lg:flex lg:ml-4">
+                            <li class="px-[15px] lg:px-[20px] text-[18px]"><a href="#"
+                                    class="no-underline font-semibold text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">All</a>
+                            </li>
+                            <li class="px-[15px] lg:px-[20px] text-[18px]"><a href="#"
+                                    class="no-underline font-semibold text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Shirts</a>
+                            </li>
+                            <li class="px-[15px] lg:px-[20px] text-[18px]"><a href="#"
+                                    class="no-underline font-semibold text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Stickers</a>
+                            </li>
+                        </ul>
+                        <div class="ml-[50px] hidden lg:block">
+                            <input type="text" placeholder="Search for products..."
+                                class="relative border-[1px] border-[#646464] bg-transparent w-[200px] lg:w-[420px] p-[6px] rounded-e-[5px] rounded-s-[5px] placeholder:text-[#808080]">
+                            <i
+                                class="fa-solid fa-magnifying-glass absolute top-[10px] left-[95%] translate-x-[50%] cursor-pointer"></i>
+                        </div>
+                    </div>
+                    <button>
+                        <div class="relative border border-[#a3a3a3] rounded"><i
+                                class="fa-sharp fa-solid fa-cart-shopping p-[12px] ease-out duration-[0.4s] hover:scale-[1.1]"></i>
+                        </div>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <!-- sidebar -->
+        <div class="sidebar fixed top-0 bottom-0 left-[-100%] bg-[#fff] p-4 w-full h-full z-50 lg:hidden">
+            <div class="mb-4">
+                <button class="closed">
+                    <div class="relative border border-[#a3a3a3] rounded w-[40px] h-[40px]">
+                        <i class="fa-solid fa-x p-[12px] ease-out duration-[0.4s] hover:scale-[1.1]"></i>
+                    </div>
+                </button>
+            </div>
+            <div class="relative mb-4">
+                <input type="text" placeholder="Search for products..."
+                    class="relative border-[1px] border-[#646464] bg-transparent w-full p-[6px] rounded-e-[5px] rounded-s-[5px] placeholder:text-[#808080]">
+                <i class="fa-solid fa-magnifying-glass absolute top-[25%] right-3 cursor-pointer"></i>
+            </div>
+            <ul class="flex flex-col">
+                <li class="pb-[15px]">
+                    <a href="#"
+                        class="no-underline font-semibold text-[20px] transition-colors hover:text-[#4169E1]">All</a>
+                </li>
+                <li class="pb-[15px]">
+                    <a href="#"
+                        class="no-underline font-semibold text-[20px] transition-colors hover:text-[#4169E1]">Shirts</a>
+                </li>
+                <li class="pb-[15px]">
+                    <a href="#"
+                        class="no-underline font-semibold text-[20px] transition-colors hover:text-[#4169E1]">Stickers</a>
+                </li>
+            </ul>
+        </div>
+        <div class="relative grid grid-cols-1 w-[95%] gap-y-6 min-h-screen mx-auto lg:grid-cols-4 lg:gap-x-6">
+            <div class="w-full">
+                <div class="w-full flex justify-center">
+                    <img class="w-[65%] lg:w-full" src="img/41l1iOm08+L._AC_UY575_.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-span-2">
+                <h1 class="text-[18px] text-[#333] font-bold mb-4 lg:text-[28px]">Nike Men's Air Force 1 '07 Basketball Shoe</h1>
+                <div class="flex mb-[40px] flex-col lg:flex-row">
+                    <div class="relative mb-[10px]">
+                        <i class="fa-solid fa-star text-[#FFD700] text-[16px]"></i>
+                        <i class="fa-solid fa-star text-[#FFD700] text-[16px]"></i>
+                        <i class="fa-solid fa-star text-[#FFD700] text-[16px]"></i>
+                        <i class="fa-solid fa-star text-[#FFD700] text-[16px]"></i>
+                        <i class="fa-solid fa-star text-[#B0C4DE] text-[16px]"></i>
+                    </div>
+                    <div class="flex gap-x-4 flex-row">
+                        <p class="text-[#333] font-medium text-[14px] lg:text-[16px]">4.95 out of 5</p>
+                        <p class="text-[#1E90FF] border-r-2 border-[#1E90FF] pr-3 text-[14px] lg:text-[16px]">21.504 ratings</p>
+                        <p class="text-[#1E90FF] text-[14px] lg:text-[16px]">21 answered questions</p> 
+                    </div>
+                </div>
+                <hr>
+                <div class="flex flex-col gap-3">
+                    <div class="py-2">
+                        <p class="text-[#333] text-[20px] font-medium">Price :<span class="font-normal text-[#DC143C]">
+                                $132</span></p>
+                    </div>
+                    <div class="flex gap-x-4 items-center">
+                        <p class="text-[20px]">Color :</p>
+                        <button class="border border-[#A9A9A9] px-2 py-1">White</button>
+                        <button class="border border-[#A9A9A9] px-2 py-1">Black</button>
+                    </div>
+                    <div>
+                        <p class="text-[20px]">Size : <span class="text-lg font-medium">Select Size</span></p>
+                        <div class="flex gap-4 py-2 flex-wrap">
+                            <button class="border border-[#A9A9A9] px-5 py-1">40</button>
+                            <button class="border border-[#A9A9A9] px-5 py-1">41</button>
+                            <button class="border border-[#A9A9A9] px-5 py-1">42</button>
+                            <button class="border border-[#A9A9A9] px-5 py-1">43</button>
+                            <button class="border border-[#A9A9A9] px-5 py-1">44</button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-[20px] font-medium py-1">Product Description</h3>
+                        <p class="text-[14px]">The legend continues to live in the Nike Air Force 1 '07 - Women's, a
+                            modern version of the
+                            iconic AF1, combining classic style and modern details. The low design offers optimum soil
+                            adhesion and a classic look. This version of the Nike Air Force 1 features rippled leather
+                            edges for a cleaner, slimmer line and more refined details.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-[20px] font-medium">Details :</h3>
+                        <li><span class="font-medium">Product Dimensions : </span>12 x 8 x 4 inches; 1.92 Pounds</li>
+                        <li><span class="font-medium">Item model number : </span>FD7039</li>
+                        <li><span class="font-medium">Manufacturer : </span>NIKE</li>
+                    </div>
+                </div>
+            </div>
+            <div class="relative text-[16px]">
+                <div class="flex flex-col border border-[#333] rounded-md p-3 gap-2">
+                    <p>No Import Fees Deposit & $30.03 Shipping to Vietnam</p>
+                    <p>Delivery <span class="font-medium">Monday, August 28</span></p>
+                    <p class="text-[#1E90FF]"><i class="fa-solid fa-plane-departure text-[#000]"></i> Transporting water
+                        out</p>
+                    <button
+                        class="bg-yellow-400 py-1 font-medium hover:bg-[#1E90FF] hover:text-[#fff] transition-all duration-[0.4s]">Buy
+                        Now</button>
+                    <div>
+                        <div class="flex justify-between items-center">
+                            <span>Payment :</span>
+                            <span class="text-[#1E90FF]">Secure transaction</span>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Ships form :</span>
+                            <a href="#"
+                                class="hover:underline hover:text-[#1E90FF] transition-all duration-[0.2s]">Amazon.com</a>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Guarantee :</span>
+                            <span class="text-[#1E90FF]">30 days</span>
+                        </div>
+                    </div>
+                    <p class="text-[18px] font-medium">After the warranty period, no returns</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="mt-28 bg-[#333] text-[#fff] p-5">
+        <div class="max-w-[1200px] mx-auto flex justify-center flex-col md:flex-row md:justify-between items-center">
+            <div class="flex flex-col md:flex-row md:text-sm">
+                <p class="mr-5">© 2023 JeiKei, Inc. All rights reserved.</p>
+                <p class="md:border-l-2 md:border-l-[#fff] px-4">Designed by JeiKei & PaulTo</p>
+            </div>
+            <div class="md:text-sm">
+                <p>The last upgrade was on August 26, 2023</p>
+            </div>
+        </div>
+    </footer>
+    <script src='store.js'></script>
+</body>
+
+</html>
