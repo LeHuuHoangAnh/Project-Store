@@ -48,15 +48,15 @@
     background: #4169E1;
     padding: 6px 15px;
     border-radius: 20px;
-    box-shadow: 2px 2px 4px rgba(0, 0 , 0, 0.7);
+    box-shadow: 2px 2px 4px rgba(0, 0 , 0, 0.1);
 }
 
 .cart {
     color: #fff;
     font-weight: 600;
     font-size: 16px;
-    background: #4169E1;
-    padding: 7px 10px;
+    background: #e46e5b;
+    padding: 7px 15px;
     border-radius: 20px;
-    box-shadow: 2px 2px 4px rgba(0, 0 , 0, 0.7);
+    box-shadow: 2px 2px 4px rgba(0, 0 , 0, 0.1);
 }
