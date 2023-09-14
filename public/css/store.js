@@ -118,7 +118,10 @@ for (let i of products.data) {
     img.setAttribute("src", i.image);
     img_container.appendChild(img);
     card.appendChild(img_container);
-    document.querySelector("#products").appendChild(card);
+    const products = document.querySelector("#products");
+    if (products) {
+        products.appendChild(card);
+    }
     //Lấy tên sản phẩm
     let container = document.createElement("div");
     container.classList.add("container");
@@ -153,13 +156,13 @@ closed.addEventListener("click", function() {
     sidebar.classList.toggle('left-[-100%]');
 })
 
-var clickdown = document.querySelector('.clickdown');
-var dropdown = document.querySelector('.dropdown');
-var list = document.querySelector('.list');
-clickdown.onclick = function() {
-    list.classList.toggle('hidden');
-    dropdown.classList.toggle('rotate-180');
-}
+// var clickdown = document.querySelector('.clickdown');
+// var dropdown = document.querySelector('.dropdown');
+// var list = document.querySelector('.list');
+// clickdown.onclick = function() {
+//     list.classList.toggle('hidden');
+//     dropdown.classList.toggle('rotate-180');
+// }
 
 var clickdown_2 = document.querySelector('.clickdown_2');
 var dropdown_2 = document.querySelector('.dropdown_2');
