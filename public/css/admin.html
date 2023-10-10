@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Jekei Store</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='src/tailwind.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='store.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="max-w-[1200px] m-auto md:flex-row">
+        <header>
+            <div class="relative flex items-center justify-between py-[40px]">
+                <nav class="absolute flex items-center justify-between top-0 left-0 w-full px-4 py-[15px]">
+                    <button class="md:hidden bar">
+                        <div class="relative border border-[#a3a3a3] rounded"><i
+                                class="fa-solid fa-bars p-[12px] ease-out duration-[0.4s] hover:scale-[1.1]"></i>
+                        </div>
+                    </button>
+                    <div class="relative flex items-center justify-center">
+                        <p class="text-[25px] md:text-[18px] font-bold uppercase">JeiKei <span
+                                class="text-[#4169E1]">Store</span></p>
+                        <ul class="ml-3 hidden md:flex lg:ml-4">
+                            <li class="px-[15px] lg:px-[20px] text-[18px]"><a href="#"
+                                    class="no-underline font-semibold text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">All</a>
+                            </li>
+                            <li class="px-[15px] lg:px-[20px] text-[18px]"><a href="#"
+                                    class="no-underline font-semibold text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Shirts</a>
+                            </li>
+                            <li class="px-[15px] lg:px-[20px] text-[18px]"><a href="#"
+                                    class="no-underline font-semibold text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Stickers</a>
+                            </li>
+                            <li class="px-[15px] lg:px-[20px] text-[18px]"><a href="Login.html"
+                                    class="no-underline font-semibold text-[18px] border-b-[2px] border-[transparent] ease-in-out duration-[0.4s] hover:border-b-[2px] hover:border-[#000]">Login</a>
+                            </li>
+                        </ul>
+                        <div class="ml-[50px] hidden md:block">
+                            <input type="text" placeholder="Search for products..."
+                                class="relative border-[1px] border-[#646464] bg-transparent w-[200px] lg:w-[420px] p-[6px] rounded-e-[5px] rounded-s-[5px] placeholder:text-[#808080]">
+                            <i
+                                class="fa-solid fa-magnifying-glass absolute top-[10px] left-[95%] translate-x-[50%] cursor-pointer"></i>
+                        </div>
+                    </div>
+                    <button>
+                        <div class="relative border border-[#a3a3a3] rounded"><i
+                                class="fa-sharp fa-solid fa-cart-shopping p-[12px] ease-out duration-[0.4s] hover:scale-[1.1]"></i>
+                        </div>
+                    </button>
+                </nav>
+            </div>
+        </header>
+        <!-- sidebar -->
+        <div class="sidebar fixed top-0 bottom-0 left-[-100%] bg-[#fff] p-4 w-full h-full z-50 md:hidden">
+            <div class="mb-4">
+                <button class="closed">
+                    <div class="relative border border-[#a3a3a3] rounded w-[40px] h-[40px]">
+                        <i class="fa-solid fa-x p-[12px] ease-out duration-[0.4s] hover:scale-[1.1]"></i>
+                    </div>
+                </button>
+            </div>
+            <div class="relative mb-4">
+                <input type="text" placeholder="Search for products..."
+                    class="relative border-[1px] border-[#646464] bg-transparent w-full p-[6px] rounded-e-[5px] rounded-s-[5px] placeholder:text-[#808080]">
+                <i class="fa-solid fa-magnifying-glass absolute top-[25%] right-3 cursor-pointer"></i>
+            </div>
+            <ul class="flex flex-col">
+                <li class="pb-[15px]">
+                    <a href="#"
+                        class="no-underline font-semibold text-[20px] transition-colors hover:text-[#4169E1]">All</a>
+                </li>
+                <li class="pb-[15px]">
+                    <a href="#"
+                        class="no-underline font-semibold text-[20px] transition-colors hover:text-[#4169E1]">Shirts</a>
+                </li>
+                <li class="pb-[15px]">
+                    <a href="#"
+                        class="no-underline font-semibold text-[20px] transition-colors hover:text-[#4169E1]">Stickers</a>
+                </li>
+                <li class="pb-[15px]">
+                    <a href="Login.html"
+                        class="no-underline font-semibold text-[20px] transition-colors hover:text-[#4169E1]">Login</a>
+                </li>
+            </ul>
+        </div>
+        <div class="container bg-[#F8F8FF] min-h-screen mx-[auto] p-6 rounded-lg shadow-md">
+            <h1 class="text-center text-[#4169E1] text-2xl font-semibold mb-4">Page dedicated to JeiKei Store
+                administrators</h1>
+            <div class="w-full bg-[#fff] rounded-lg shadow-md min-h-screen m-auto p-4">
+                <div class="relative">
+                    <h2 class="text-[#4169E1] font-bold text-xl">All Products</h2>
+                    <div class="absolute bottom-0 w-[115px] h-1 bg-[#4169E1]"></div>
+                </div>
+                <div class="relative overflow-x-auto my-2">
+                    <table class="w-full text-[#333]">
+                        <tr>
+                            <th class="px-6 py-2">STT</th>
+                            <th class="px-6 py-2">Product Name</th>
+                            <th class="px-6 py-2">Color</th>
+                            <th class="px-6 py-2">Category</th>
+                            <th class="px-6 py-2">Price</th>
+                            <th class="px-6 py-2">Action</th>
+                        </tr>
+                        <tbody>
+                            <tr class="text-center">
+                                <td class="px-6 py-2">1</td>
+                                <th class="px-6 py-2">Dickies Men's Heavyweight Crew Neck Short Sleeve Tee</th>
+                                <td class="px-6 py-2">
+                                    <p class="py-1">Black</p>
+                                    <p class="py-1">Navy</p>
+                                    <p class="py-1">Green</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer class="mt-28 bg-[#333] text-[#fff] p-5">
+        <div class="max-w-[1200px] mx-auto flex justify-center flex-col md:flex-row md:justify-between items-center">
+            <div class="flex flex-col md:flex-row md:text-sm">
+                <p class="mr-5">© 2023 JeiKei, Inc. All rights reserved.</p>
+                <p class="md:border-l-2 md:border-l-[#fff] px-4">Designed by JeiKei & PaulTo</p>
+            </div>
+            <div class="md:text-sm">
+                <p>The last upgrade was on August 26, 2023</p>
+            </div>
+        </div>
+    </footer> -->
+    <script src='store.js'></script>
+</body>
+
+</html>
