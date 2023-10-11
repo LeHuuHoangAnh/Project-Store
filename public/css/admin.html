@@ -90,12 +90,13 @@
         <div class="container bg-[#F8F8FF] min-h-screen mx-[auto] p-6 rounded-lg shadow-md">
             <h1 class="text-center text-[#4169E1] text-2xl font-semibold mb-4">Page dedicated to JeiKei Store
                 administrators</h1>
+            <!-- All Products-->
             <div class="w-full bg-[#fff] rounded-lg shadow-md min-h-screen m-auto p-4">
                 <div class="relative">
                     <h2 class="text-[#4169E1] font-bold text-xl">All Products</h2>
                     <div class="absolute bottom-0 w-[115px] h-1 bg-[#4169E1]"></div>
                 </div>
-                <div class="relative overflow-x-auto my-2">
+                <div class="relative overflow-x-auto my-3">
                     <table class="w-full text-[#333]">
                         <tr>
                             <th class="px-6 py-2">STT</th>
@@ -106,7 +107,7 @@
                             <th class="px-6 py-2">Action</th>
                         </tr>
                         <tbody>
-                            <tr class="text-center">
+                            <tr class="text-center bg-[#F8F8FF] rounded-xl shadow-xl text-[15px] text-[#333] border border-[#cac9c9]">
                                 <td class="px-6 py-2">1</td>
                                 <th class="px-6 py-2">Dickies Men's Heavyweight Crew Neck Short Sleeve Tee</th>
                                 <td class="px-6 py-2">
@@ -114,9 +115,31 @@
                                     <p class="py-1">Navy</p>
                                     <p class="py-1">Green</p>
                                 </td>
+                                <td>
+                                    <p>Skirt</p>
+                                </td>
+                                <td>
+                                    <p>$232</p>
+                                </td>
+                                <td class="flex flex-col items-center justify-center py-6 gap-3 font-medium">
+                                    <button class="bg-[#FFD700] px-3 py-2 rounded-md shadow-lg">Edit <i class="fa-solid fa-pencil"></i></button>
+                                    <button class="bg-[#4169E1] px-3 py-2 rounded-md shadow-lg">Delete</button>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+                <div class="relative">
+                    <h2 class="text-[#4169E1] font-bold text-xl">Add Products</h2>
+                    <div class="absolute bottom-0 w-[130px] h-1 bg-[#4169E1]"></div>
+                </div>
+                <div class="w-full bg-[#fff] shadow-md rounded-lg p-4">
+                    <form action="" method="post">
+                        <div class="flex items-center justify-around w-[100%]">
+                            <label for="" class="font-semibold">Product Name : </label>
+                            <input type="text" placeholder="Add name..." class="border border-[#c9c8c8] w-[400px] p-2 rounded-xl shadow-md outline-none text-[#333]">
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
