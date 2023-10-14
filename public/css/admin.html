@@ -12,8 +12,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="max-w-[1200px] m-auto md:flex-row">
+<body class="relative">
+    <div class="relative max-w-[1200px] m-auto md:flex-row">
         <header>
             <div class="relative flex items-center justify-between py-[40px]">
                 <nav class="absolute flex items-center justify-between top-0 left-0 w-full px-4 py-[15px]">
@@ -87,16 +87,15 @@
                 </li>
             </ul>
         </div>
-        <div class="container bg-[#F8F8FF] mx-[auto] p-6 rounded-lg shadow-md">
-            <h1 class="text-center text-[#4169E1] text-2xl font-semibold mb-4">Page dedicated to JeiKei Store
-                administrators</h1>
+        <div class="container bg-[#F8F8FF] mx-[auto] lg:p-6 rounded-lg shadow-md">
+            <h1 class="text-center text-[#4169E1] text-[18px] lg:text-2xl font-semibold mb-4">ADMIN DASHBOARD</h1>
             <!-- All Products-->
             <div class="w-full bg-[#fff] rounded-lg shadow-md m-auto p-4">
                 <div class="relative">
                     <h2 class="text-[#333] font-bold text-xl">All Products</h2>
                     <div class="absolute bottom-0 w-[115px] h-1 bg-[#4169E1]"></div>
                 </div>
-                <div class="relative overflow-x-auto my-3">
+                <div class="relative overflow-x-auto my-5">
                     <table class="w-full text-[#333]">
                         <tr>
                             <th class="px-6 py-2">STT</th>
@@ -110,7 +109,7 @@
                             <tr
                                 class="text-center bg-[#F8F8FF] rounded-xl shadow-xl text-[15px] text-[#333] border border-[#cac9c9]">
                                 <td class="px-6 py-2">1</td>
-                                <th class="px-6 py-2">Dickies Men's Heavyweight Crew Neck Short Sleeve Tee</th>
+                                <th class="px-6 py-2 whitespace-nowrap">Dickies Men's Heavyweight Crew Neck Short Sleeve Tee</th>
                                 <td class="px-6 py-2">
                                     <p class="py-1">Black</p>
                                     <p class="py-1">Navy</p>
@@ -136,22 +135,22 @@
                     <div class="absolute bottom-0 w-[130px] h-1 bg-[#4169E1]"></div>
                 </div>
                 <div class="shadow-md rounded-lg p-5 flex justify-center items-center flex-col">
-                    <div class="flex justify-between items-center flex-col w-[600px] gap-6">
-                        <div class="flex items-center justify-between w-full">
-                            <label for="" class="font-semibold">1. Product Name : </label>
-                            <input type="text" placeholder="Add name ..." class="border border-[#c9c8c8] w-[400px] p-2 rounded-xl shadow-md outline-none text-[#333]">
+                    <div class="flex justify-between items-center flex-col w-full gap-6">
+                        <div class="lg:flex items-center justify-between w-full lg:w-[60%] flex-col lg:flex-row mx-auto">
+                            <label for="" class="font-semibold mb-3 lg:mb-0">1. Product Name : </label>
+                            <input type="text" placeholder="Add name ..." class="w-full border border-[#c9c8c8] lg:w-[60%] p-2 rounded-xl shadow-md outline-none text-[#333]">
                         </div> 
-                        <div class="flex items-center justify-between w-full">
-                            <label for="" class="font-semibold">2. Product Category : </label>
-                            <input type="text" placeholder="Add Category ..." class="border border-[#c9c8c8] w-[400px] p-2 rounded-xl shadow-md outline-none text-[#333]">
+                        <div class="lg:flex items-center justify-between w-full lg:w-[60%] flex-col lg:flex-row mx-auto">
+                            <label for="" class="font-semibold mb-3 lg:mb-0">2. Product Category : </label>
+                            <input type="text" placeholder="Add Category ..." class="w-full border border-[#c9c8c8] lg:w-[60%] p-2 rounded-xl shadow-md outline-none text-[#333]">
                         </div>
-                        <div class="flex items-center justify-between w-full">
-                            <label for="" class="font-semibold">3. Product Price : </label>
-                            <input type="number" placeholder="Add Price ..." class="border border-[#c9c8c8] w-[400px] p-2 rounded-xl shadow-md outline-none text-[#333]">
+                        <div class="lg:flex items-center justify-between w-full lg:w-[60%] flex-col lg:flex-row mx-auto">
+                            <label for="" class="font-semibold mb-3 lg:mb-0">3. Product Price : </label>
+                            <input type="number" placeholder="Add Price ..." class="w-full border border-[#c9c8c8] lg:w-[60%] p-2 rounded-xl shadow-md outline-none text-[#333]">
                         </div>
-                        <div class="flex items-center justify-between w-full">
-                            <label for="" class="font-semibold">4. Product Detail : </label>
-                            <textarea placeholder="Details ..." class="w-[400px] border border-[#c9c8c8] p-2 outline-none text-[#333]"></textarea>
+                        <div class="lg:flex items-center justify-between w-full lg:w-[60%] flex-col lg:flex-row mx-auto">
+                            <label for="" class="font-semibold mb-3 lg:mb-0">4. Product Detail : </label>
+                            <textarea placeholder="Details ..." class="w-full lg:w-[60%] border border-[#c9c8c8] p-2 outline-none text-[#333]"></textarea>
                         </div>
                     </div>
                     <div class="w-full my-4">
@@ -170,35 +169,33 @@
                             <button class="border border-[#333] px-4 py-1 font-medium transition-all duration-300 hover:bg-[#4169E1] hover:text-[#fff] focus:bg-[#4169E1] focus:text-[#fff]">DarkCyan</button>
                         </div>
                     </div>
-                    <div class="flex justify-center items-center gap-4 w-full bg-[#bae9fc] p-4 mb-5">
+                    <div class="flex justify-center items-center lg:flex-row flex-col gap-4 w-full bg-[#bae9fc] p-4 mb-5">
                         <h3 class="font-semibold">Enter the color of product</h3>
-                        <input type="text" placeholder="Color ..." class="p-2 w-[250px] outline-none">
+                        <input type="text" placeholder="Color ..." class="p-2 w-full lg:w-[250px] outline-none">
                         <button class="px-4 py-2 bg-[#FFD700] rounded-xl font-medium shadow-md text-[#333]">Choose</button>
                     </div>
-                    <div class="w-full">
+                    <div class="w-full mb-[20px] border-b-2 lg:pb-[35px]">
                         <h3 class="font-medium mb-4">7. Upload files image :</h3>
-                        <div class="flex justify-between items-center w-full">
-                            <div>
+                        <div class="flex justify-between items-center w-full lg:flex-row flex-col">
+                            <div class="flex justify-center items-center mb-6 lg:mb-0">
                                 <input type="file" id="file" class="hidden">
-                                <label for="file" class="bg-[#333] px-5 py-2 rounded-xl cursor-pointer text-[#fff] transition-all duration-300 font-medium hover:bg-[#5e94f9]">Choose File</label>
+                                <label for="file" class="bg-[#333] px-5 py-2 mx-2 rounded-xl cursor-pointer text-[#fff] transition-all duration-300 font-medium hover:bg-[#5e94f9]">Choose File</label>
                                 <label for="file">No file chosen</label> 
                             </div>
-                            <button class="bg-[#4169E1] text-[#fff] px-5 py-2 font-medium">Upload File</button>
+                            <button class="bg-[#4169E1] text-[#fff] px-5 py-2 font-medium mb-6 lg:mb-0">Upload File</button>
                         </div>
                     </div>
-                    <hr>
                     <button class="bg-[#4169E1] text-[#fff] px-5 py-2 font-medium">Add Product</button>
                 </div>
-
                 <!-- order -->
                 <div class="relative my-[35px]">
                     <div class="relative text-center mb-5">
                         <h2 class="text-[#333] font-bold text-2xl">Order</h2>
-                        <div class="absolute bottom-0 left-[46%] w-[100px] h-1 bg-[#4169E1]"></div>
+                        <div class="absolute bottom-0 left-[50%] translate-x-[-50%] w-[100px] h-1 bg-[#4169E1]"></div>
                     </div>
-                    <div class="relative flex justify-center items-center"> 
-                        <div class="relative flex justify-between w-[1000px] border-[#bababa] border-[2px] p-7 shadow-md">
-                            <div class="w-2/3 leading-8">
+                    <div class="flex justify-center items-center mb-12 sm:mb-8"> 
+                        <div class="relative sm:h-fit flex justify-between flex-col lg:flex-row w-[1000px] border-[#bababa] border-[2px] p-7 shadow-md">
+                            <div class="w-full lg:w-2/3 leading-8">
                                 <h1 class="">Product Name : <b>Nike Men's Air Force 1 '07 Basketball Shoe</b></h1>
                                 <p>Price : <b>$132</b></p>
                                 <p>Amount : <b>1</b></p>
@@ -208,10 +205,10 @@
                                 <p>Phone : <b>0799658592</b></p>
                                 <p>Address : <b>Viet Nam</b></p>
                             </div>
-                            <div class="w-1/3 flex justify-center items-center">
-                                <img src="img/41l1iOm08+L._AC_UY575_.jpg" alt="" class="w-full">
+                            <div class="w-1/3 lg:flex justify-center items-center hidden">
+                                <img src="img/41l1iOm08+L._AC_UY575_.jpg" alt="" class="w-full lg:block hidden">
                             </div>
-                            <div class="absolute bottom-[-20px] left-[50%] translate-x-[-50%] bg-gradient-to-r from-cyan-500 to-blue-400 inline-block p-3 justify-center items-center">
+                            <div class="absolute lg:bottom-[-20px] bottom-0 left-[50%] translate-x-[-50%] text-center bg-gradient-to-r from-cyan-500 to-blue-400 w-full lg:w-[350px] p-3 z-10">
                                 <input type="checkbox" id="check" class="p-2 cursor-pointer">
                                 <label for="check" class="text-[#fff] font-medium border-r-2 pr-2 cursor-pointer">Update Order State</label>
                                 <button class="bg-red-500 px-4 py-[6px] mx-2 font-medium rounded-xl text-[#fff]">Delete</button>
@@ -226,9 +223,9 @@
                         <h2 class="text-[#333] font-bold text-xl">FeedBacks</h2>
                         <div class="absolute bottom-0 w-[100px] h-1 bg-[#4169E1]"></div>
                     </div>
-                    <div class="bg-[#F8F8FF] border p-4 shadow-md">
-                        <ul class="flex items-start flex-col hover:bg-gray-100 p-3 gap-7">
-                            <li class="flex justify-center items-start gap-x-2">
+                    <div class="bg-[#F8F8FF] border p-4 shadow-md w-full">
+                        <ul class="flex items-start flex-col p-3 gap-7">
+                            <li class="flex justify-center items-start flex-col gap-x-2 w-full">
                                 <div class="flex items-center justify-center w-6 h-6 bg-[#333] text-sm p-2 rounded-[50%]">
                                     <i class="fa-solid fa-user text-[#fff]"></i>
                                 </div>
@@ -241,18 +238,18 @@
                                     <div class="text-[#333]">
                                         <p class="mb-1">"Clothes are very fashion."</p>
                                     </div>
-                                    <div class="relative bg-[#fff] p-3 my-1">
+                                    <div class="relative bg-[#fff] p-3 my-1 w-full">
                                         <h1 class="font-semibold">Reply from JeiKei store</h1>
                                         <p>Hello, this is JeiKei Store, Can we help you?</p>
                                         <i class="fa-solid fa-x absolute top-2 right-2 text-[#969595] text-[16px]" class="close"></i>
                                     </div>
-                                    <div class="flex items-center gap-x-5">
+                                    <div class="flex lg:items-center lg:gap-x-5 lg:flex-row flex-col gap-4 items-start">
                                         <input type="text" placeholder="Reply..." class="border-b-2 w-[300px] p-2 bg-[#F8F8FF] outline-none hover:bg-gray-100">
                                         <button class="px-6 py-2 bg-[#333] font-semibold text-[#fff]">Post</button>
                                     </div>
                                 </div>
                             </li>
-                            <li class="flex justify-center items-start gap-x-2">
+                            <li class="flex justify-center items-start flex-col gap-x-2 w-full">
                                 <div class="flex items-center justify-center w-6 h-6 bg-[#333] text-sm p-2 rounded-[50%]">
                                     <i class="fa-solid fa-user text-[#fff]"></i>
                                 </div>
@@ -260,17 +257,17 @@
                                     <div class="block">
                                         <span class="font-medium">jungkook@gmail.com </span>
                                         <span>Submitted a response</span>
-                                        <span class="font-medium">Mon Aug 30 2023</span>
+                                        <span class="font-medium">Tue Aug 22 2023</span>
                                     </div>
                                     <div class="text-[#333]">
                                         <p class="mb-1">"Hello! Is there any another contact?"</p>
                                     </div>
-                                    <div class="relative bg-[#fff] p-3 my-1">
+                                    <div class="relative bg-[#fff] p-3 my-1 w-full">
                                         <h1 class="font-semibold">Reply from JeiKei store</h1>
                                         <p>Hello, this is JeiKei Store, Can we help you?</p>
                                         <i class="fa-solid fa-x absolute top-2 right-2 text-[#969595] text-[16px]" class="close"></i>
                                     </div>
-                                    <div class="flex items-center gap-x-5">
+                                    <div class="flex lg:items-center lg:gap-x-5 lg:flex-row flex-col gap-4 items-start">
                                         <input type="text" placeholder="Reply..." class="border-b-2 w-[300px] p-2 bg-[#F8F8FF] outline-none hover:bg-gray-100">
                                         <button class="px-6 py-2 bg-[#333] font-semibold text-[#fff]">Post</button>
                                     </div>
