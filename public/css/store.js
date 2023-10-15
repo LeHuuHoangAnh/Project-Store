@@ -164,10 +164,23 @@ closed.addEventListener("click", function() {
 //     dropdown.classList.toggle('rotate-180');
 // }
 
-var clickdown_2 = document.querySelector('.clickdown_2');
-var dropdown_2 = document.querySelector('.dropdown_2');
-var list_2 = document.querySelector('.list_2');
-clickdown_2.onclick = function() {
-    list_2.classList.toggle('hidden');
-    dropdown_2.classList.toggle('rotate-180');
-}
+$(document).ready(function() {
+    $('.clickdown_2').click(function() {
+        $('.list_2').toggleClass('hidden');
+        $('.dropdown_2').toggleClass('rotate-180');
+    })
+}) 
+
+$(document).ready(function() {
+    $('.clickdown_1').click(function() {
+        $('.list_1').toggleClass('hidden');
+        $('.dropdown_1').toggleClass('rotate-180');
+    })
+}) 
+// var clickdown_2 = document.querySelector('.clickdown_2');
+// var dropdown_2 = document.querySelector('.dropdown_2');
+// var list_2 = document.querySelector('.list_2');
+// clickdown_2.onclick = function() {
+//     list_2.classList.toggle('hidden');
+//     dropdown_2.classList.toggle('rotate-180');
+// }
