@@ -144,43 +144,37 @@ for (let i of products.data) {
     card.appendChild(cart_price);
 }
 
-//sidebar
-let bar = document.querySelector('.bar');
-let sidebar = document.querySelector('.sidebar');
-let closed = document.querySelector('.closed');
-bar.addEventListener("click", function() {
-    sidebar.classList.toggle('left-[-100%]');
-})
-
-closed.addEventListener("click", function() {
-    sidebar.classList.toggle('left-[-100%]');
-})
-
-// var clickdown = document.querySelector('.clickdown');
-// var dropdown = document.querySelector('.dropdown');
-// var list = document.querySelector('.list');
-// clickdown.onclick = function() {
-//     list.classList.toggle('hidden');
-//     dropdown.classList.toggle('rotate-180');
-// }
-
 $(document).ready(function() {
+    //sidebar
+    $('.bar').click(function() {
+        $('.sidebar').toggleClass('left-[-100%]');
+    })
+
+    $('.closed').click(function() {
+        $('.sidebar').toggleClass('left-[-100%]');
+    })
+
+    //ẩn hiện thanh ngang
     $('.clickdown_2').click(function() {
-        $('.list_2').toggleClass('hidden');
-        $('.dropdown_2').toggleClass('rotate-180');
-    })
-}) 
+        $('.list_1').addClass('hidden');
+        $('.dropdown_1').addClass('rotate-180');
+        if (!$('.list_2').hasClass('hidden')) {
+            $('.list_2').addClass('hidden');
+        } else {
+            $('.list_2').removeClass('hidden');
+        }
 
-$(document).ready(function() {
+        $('.dropdown_2').toggleClass('rotate-180');
+    });
+
     $('.clickdown_1').click(function() {
-        $('.list_1').toggleClass('hidden');
+        $('.list_2').addClass('hidden');
+        if (!$('.list_1').hasClass('hidden')) {
+            $('.list_1').addClass('hidden');
+        } else {
+            $('.list_1').removeClass('hidden');
+        }
+
         $('.dropdown_1').toggleClass('rotate-180');
-    })
-}) 
-// var clickdown_2 = document.querySelector('.clickdown_2');
-// var dropdown_2 = document.querySelector('.dropdown_2');
-// var list_2 = document.querySelector('.list_2');
-// clickdown_2.onclick = function() {
-//     list_2.classList.toggle('hidden');
-//     dropdown_2.classList.toggle('rotate-180');
-// }
+    });
+});
