@@ -177,4 +177,15 @@ $(document).ready(function() {
 
         $('.dropdown_1').toggleClass('rotate-180');
     });
+
+    //cart
+    $('.close-cart').click(function() {
+        $('.cart-shop').addClass('translate-x-[100%]');
+        $('.opacity-toggle').addClass('hidden');
+    })
+
+    $('.fa-cart-shopping').click(function() {
+        $('.cart-shop').removeClass('translate-x-[100%]');
+        $('.opacity-toggle').removeClass('hidden');
+    })
 });
